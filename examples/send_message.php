@@ -13,8 +13,8 @@ $televoips = new TeleVoIPs($token);
 //get all jobs, paginated - 10 at a time
 try {
     $message = $televoips->message()
-        ->setFrom('19876543210')
-        ->setTo('9417264539')
+        ->setFrom(getenv('TELEVOIPS_FROM_NUMBER'))
+        ->setTo(getenv('TELEVOIPS_TO_NUMBER'))
         ->setMessage('Test SMS')
         ->send();
     var_dump($message);
