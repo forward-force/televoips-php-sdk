@@ -45,7 +45,7 @@ class HttpClient
 
     public function __construct(string $apiKey)
     {
-        $this->client = new Client(['base_uri' => $this->baseURL . $apiKey . '/']);
+        $this->client = new Client(['base_uri' => $this->baseURL, 'headers', ['Authorization', $apiKey]]);
     }
 
     /**
@@ -61,9 +61,10 @@ class HttpClient
         return $this->toArray();
     }
 
-    public function post(string $endpoint)
+    public function post(string $endpoint): array
     {
-        $this->client->post($endpoint, ['body' => $this->getBodyParams()]);
+        $this->response = $this->client->post($endpoint, ['form_params' => $this->getBodyParams()]);
+        return $this->toArray();
     }
 
     /**
@@ -102,15 +103,11 @@ class HttpClient
      */
     protected function buildQuery(string $endpoint): string
     {
-        $query = [
-            'offset' => $this->offset,
-            'records' => $this->records
-        ];
 
-        if (!empty($this->getQueryString())) {
-            $query = $query + $this->getQueryString();
+        if (empty($this->getQueryString())) {
+            return $endpoint;
         }
 
-        return $endpoint . '/?' . http_build_query($query);
+        return $endpoint . '?' . http_build_query($this->getQueryString());
     }
 }

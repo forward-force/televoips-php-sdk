@@ -32,13 +32,16 @@ class Message extends HttpClient implements ApiAwareContract
      */
     protected string $message;
 
+    /**
+     * @return array
+     */
     public function send()
     {
         $this->addBodyParameter('to', $this->getTo());
         $this->addBodyParameter('from', $this->getFrom());
         $this->addBodyParameter('content', $this->getMessage());
 
-        $this->post($this->buildQuery('/messages'));
+        return $this->post($this->buildQuery('/messages'));
     }
     /**
      * Get all jobs (paginated)
