@@ -6,6 +6,7 @@ use ForwardForce\TeleVoIPs\Contracts\ApiAwareContract;
 use ForwardForce\TeleVoIPs\HttpClient;
 use GuzzleHttp\Exception\GuzzleException;
 
+/** @psalm-suppress PropertyNotSetInConstructor */
 class Message extends HttpClient implements ApiAwareContract
 {
     /**

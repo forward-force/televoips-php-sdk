@@ -71,9 +71,9 @@ trait Parametarable
 
     /**
      * @param array $bodyParams
-     * @return Parametarable
+     * @return self
      */
-    public function setBodyParams(array $bodyParams): Parametarable
+    public function setBodyParams(array $bodyParams): self
     {
         $this->bodyParams = $bodyParams;
         return $this;
