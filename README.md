@@ -4,8 +4,8 @@ This is a wrapper around [TeleVoIPs API](https://televoips.com/). The API is ver
 
 ## Authentication
 
-In order to authenticate you need a token from TeleVoIPs. Head over to the developer portal to read updated procesure as how to
-obtain one: https://developer.televoips.com/
+In order to authenticate you need a token from TeleVoIPs. Head over to the docs portal to read updated procedure as how to
+obtain one: https://documenter.getpostman.com/view/3155589/T1DtfbSY#intro
 
 TeleVoIPs is likely to give you a toke and a secret, the API requires the token only. 
 
