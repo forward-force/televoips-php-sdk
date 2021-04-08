@@ -18,5 +18,8 @@ class MessageTest extends TestCase
 
         $message->setTo('+9411234567ABC!!');
         $this->assertSame('+9411234567', $message->getTo());
+
+        $message->setTo('(941) 726-1234');
+        $this->assertSame('9417261234', $message->getTo());
     }
 }

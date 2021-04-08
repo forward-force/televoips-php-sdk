@@ -88,6 +88,7 @@ class Message extends HttpClient implements ApiAwareContract
     public function setTo(string $to): Message
     {
         $this->to = filter_var($to, FILTER_SANITIZE_NUMBER_INT);
+        $this->to = str_replace('-', '', $this->to);
         return $this;
     }
 
