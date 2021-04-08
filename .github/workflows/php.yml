@@ -40,3 +40,6 @@ jobs:
 
             - name: Run psalm
               run: composer psalm
+
+            - name: Run phpmd
+              run: composer phpmd

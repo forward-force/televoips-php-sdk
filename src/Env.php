@@ -15,6 +15,8 @@ class Env
      * @param string $name
      *
      * @return mixed
+     *
+     * @SuppressWarnings(PHPMD.Superglobals)
      */
     public function get(string $name)
     {
