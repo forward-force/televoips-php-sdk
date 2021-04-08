@@ -35,7 +35,7 @@ class Message extends HttpClient implements ApiAwareContract
     /**
      * @return array
      */
-    public function send()
+    public function send(): array
     {
         $this->addBodyParameter('to', $this->getTo());
         $this->addBodyParameter('from', $this->getFrom());
@@ -107,6 +107,4 @@ class Message extends HttpClient implements ApiAwareContract
         $this->message = $message;
         return $this;
     }
-
-
 }
