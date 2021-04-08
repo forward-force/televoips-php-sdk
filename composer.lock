@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "30f08f087da194e97a028fce201f605c",
+    "content-hash": "a95633f9edb56c35dd814dc00becd5b8",
     "packages": [
         {
             "name": "composer/xdebug-handler",
@@ -4633,7 +4633,6 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "guzzlehttp/guzzle": 20,
-        "phpmd/phpmd": 0,
         "phpunit/phpunit": 20,
         "squizlabs/php_codesniffer": 20,
         "vimeo/psalm": 20
