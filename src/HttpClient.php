@@ -45,7 +45,7 @@ class HttpClient
 
     public function __construct(string $apiKey)
     {
-        $this->client = new Client(['base_uri' => $this->baseURL, 'headers', ['Authorization', $apiKey]]);
+        $this->client = new Client(['base_uri' => $this->baseURL, 'headers' => ['Authorization' => $apiKey]]);
     }
 
     /**
@@ -108,6 +108,6 @@ class HttpClient
             return $endpoint;
         }
 
-        return $endpoint . '?' . http_build_query($this->getQueryString());
+        return $endpoint . '/?' . http_build_query($this->getQueryString());
     }
 }
