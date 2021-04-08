@@ -110,4 +110,16 @@ class HttpClient
 
         return $endpoint . '/?' . http_build_query($this->getQueryString());
     }
+
+    /**
+     * Sanitizing phone number, removing letters, special chars (except +)
+     *
+     * @param string $phoneNumber
+     * @return string
+     */
+    protected function sanitizePhoneNumber(string $phoneNumber): string
+    {
+        $phoneNumber = filter_var($phoneNumber, FILTER_SANITIZE_NUMBER_INT);
+        return str_replace('-', '', $phoneNumber);
+    }
 }
