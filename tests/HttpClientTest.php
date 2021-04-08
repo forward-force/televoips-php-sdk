@@ -2,7 +2,6 @@
 
 namespace ForwardForce\TeleVoIPs\Tests;
 
-use ForwardForce\TeleVoIPs\Entities\Message;
 use ForwardForce\TeleVoIPs\HttpClient;
 use PHPUnit\Framework\TestCase;
 
