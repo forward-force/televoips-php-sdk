@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b27206ada3806be7cb351b14e8cac628",
+    "content-hash": "30f08f087da194e97a028fce201f605c",
     "packages": [
         {
             "name": "composer/xdebug-handler",
@@ -371,22 +371,22 @@
         },
         {
             "name": "phpmd/phpmd",
-            "version": "dev-master",
+            "version": "2.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpmd/phpmd.git",
-                "reference": "7ed4ac39d95285944670d5fa93472257e4afc24b"
+                "reference": "ce10831d4ddc2686c1348a98069771dd314534a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpmd/phpmd/zipball/7ed4ac39d95285944670d5fa93472257e4afc24b",
-                "reference": "7ed4ac39d95285944670d5fa93472257e4afc24b",
+                "url": "https://api.github.com/repos/phpmd/phpmd/zipball/ce10831d4ddc2686c1348a98069771dd314534a8",
+                "reference": "ce10831d4ddc2686c1348a98069771dd314534a8",
                 "shasum": ""
             },
             "require": {
                 "composer/xdebug-handler": "^1.0",
                 "ext-xml": "*",
-                "pdepend/pdepend": "^2.8.0",
+                "pdepend/pdepend": "^2.7.1",
                 "php": ">=5.3.9"
             },
             "require-dev": {
@@ -398,7 +398,6 @@
                 "phpunit/phpunit": "^4.8.36 || ^5.7.27",
                 "squizlabs/php_codesniffer": "^2.0"
             },
-            "default-branch": true,
             "bin": [
                 "src/bin/phpmd"
             ],
@@ -443,7 +442,7 @@
             "support": {
                 "irc": "irc://irc.freenode.org/phpmd",
                 "issues": "https://github.com/phpmd/phpmd/issues",
-                "source": "https://github.com/phpmd/phpmd/tree/master"
+                "source": "https://github.com/phpmd/phpmd/tree/2.9.1"
             },
             "funding": [
                 {
@@ -451,7 +450,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-03-10T20:18:10+00:00"
+            "time": "2020-09-23T22:06:32+00:00"
         },
         {
             "name": "psr/container",
@@ -4634,7 +4633,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "guzzlehttp/guzzle": 20,
-        "phpmd/phpmd": 20,
+        "phpmd/phpmd": 0,
         "phpunit/phpunit": 20,
         "squizlabs/php_codesniffer": 20,
         "vimeo/psalm": 20
