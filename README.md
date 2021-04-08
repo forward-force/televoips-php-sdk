@@ -27,7 +27,13 @@ try {
     var_dump($e->getMessage());
 }
 ```
+#### How run the examples:
 
+To run the examples, you need the following:
+
+```bash
+php examples/send_message.php
+```
 
 ## Contributions
 
