@@ -90,9 +90,7 @@ class HttpClient
             return [];
         }
 
-        $this->hasMore = $response['has_more'];
-        $this->found = $response['found'];
-        return $response['data'];
+        return $response;
     }
 
     /**
